@@ -1,0 +1,54 @@
+body{
+
+  font-family: cursive;
+  background-color:  #F8ECD1;
+}
+h1{
+  color: #A27B5C
+}
+h2{
+  color: #FF8B8B;
+}
+.hr2{
+  border-style: none;
+  border-top-style: solid;
+  /* border-top-style: dashed; */
+  border-width: 3px;
+  border-color: grey;
+  width: 100%;
+}
+hr{
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 7px;
+  border-color: #ECB390;
+  width: 30%;
+
+}
+li{
+  color: #3D0000;
+}
+h2:hover{
+  color: #61481C;
+}
+P{
+  color: #3D0000;
+
+}
+.b{
+  color: black;
+}
+hr:hover{
+  border-color: white;
+}
+.tg{
+  color: #3D0000;
+
+}
+a:hover{
+  color: #A7D129;
+}
+li{
+  line-height: 1.5em;
+
+}
