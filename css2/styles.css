@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+body {
+  margin: 0;
+  margin-bottom: 0;
+  background-color: #FFFFFF;
+}
+
+/* Intro Section */
+.intro {
+  position: relative;
+  padding-top: 110px;
+  margin-bottom: 35px;
+  padding-bottom: 100px;
+  background-color: #4831d4;
+}
+
+.pic {
+  margin-left: 105px;
+  margin-right: 150px;
+  border-radius: 50%;
+}
+
+.t {
+  color: #FFDE00;
+  font-family: 'SF UI Text';
+  font-weight: 600;
+  letter-spacing: 0.125em;
+  line-height: 1.75;
+  margin: 0 0 1.5rem 0;
+  text-transform: uppercase;
+}
+
+/* Typing Animation */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.wrapper .static-txt {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.wrapper .dynamic-txts {
+  margin-left: 15px;
+  line-height: 90px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.dynamic-txts li {
+  list-style: none;
+  color: #FFDE00;
+  font-size: 60px;
+  font-weight: 500;
+  top: 0;
+  position: relative;
+  animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+
+.dynamic-txts li {
+  position: relative;
+}
+
+.dynamic-txts li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4831D8;
+  border-left: 2px solid #FFDE00;
+  animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.i4 {
+  position: absolute;
+  bottom: 0;
+  padding-left: 1150px;
+}
+
+/* About Me Section */
+hr {
+  margin: auto;
+  margin-bottom: 15px;
+  border-style: none;
+  border-top-style: solid;
+  border-width: 5px;
+  border-color: black;
+  width: 65%;
+}
+
+.A {
+  color: #42855B;
+  font-family: 'SF UI Text';
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.75;
+  margin: 0 0 1.5rem 0;
+  text-transform: uppercase;
+}
+
+.ip {
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: 'Kaushan Script', cursive;
+  letter-spacing: 0.1em;
+  line-height: 1.75;
+}
+
+/* Skills Section */
+.skills {
+  position: relative;
+  margin-top: 30px;
+  padding-top: 20px;
+  margin-bottom: 35px;
+  padding-bottom: 50px;
+  text-align: center;
+  background-color: #FFFFFF;
+  padding-left: 150px;
+}
+
+.ski1 {
+  text-align: center;
+  padding-right: 150px;
+  color: #42855B;
+  font-family: 'SF UI Text';
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.75;
+  margin: 0 0 1.5rem 0;
+  text-transform: uppercase;
+}
+
+.ski {
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 310px;
+}
+
+/* Skills icons*/
+ul.feature-icons {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 3rem 0;
+  padding-left: 0;
+}
+
+ul.feature-icons:first-child {
+  margin-top: 0;
+}
+
+ul.feature-icons li {
+  margin: 2.5rem 0 0 0;
+  padding: 0.5rem 0 0 4.5rem;
+  position: relative;
+  width: 50%;
+}
+
+ul.feature-icons li:before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 512 512'%3E%3Cpath d='M256,0l221.7,128v256L256,512L34.3,384V128L256,0z' fill='rgba(144, 144, 144, 0.1)' /%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #000000;
+  display: block;
+  font-size: 1.25rem;
+  height: 3.25rem;
+  left: 0;
+  line-height: 3.25rem;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 3.25rem;
+}
+
+ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 736px) {
+  ul.feature-icons {
+    margin: 0 0 3rem 0;
+  }
+
+  ul.feature-icons li {
+    width: 100%;
+  }
+
+  ul.feature-icons li:nth-child(2) {
+    margin-top: 2rem;
+  }
+}
+
+ul {
+  display: inline;
+  text-align: left;
+}
+
+h6 {
+  text-align: left;
+  font-family: 'Kaushan Script', cursive;
+  letter-spacing: 0.1em;
+  line-height: 1.75;
+}
+
+/* Works & Achievements section */
+.works {
+  background-color: #C3FF99;
+  padding-top: 20px;
+}
+
+.w1 {
+  text-align: center;
+  color: #4831D8;
+  margin-bottom: 35px;
+  padding-left: 320px;
+  font-family: 'SF UI Text';
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.75;
+  margin: 0 0 1.5rem 0;
+  text-transform: uppercase;
+}
+
+.i2 {
+  margin-bottom: 35px;
+}
+
+.em {
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+}
+
+.w2 {
+  font-family: 'SF UI Text';
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 1.75;
+  margin: 0 0 1.5rem 0;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.w3 {
+  font-family: "Raleway", Helvetica, sans-serif;
+  letter-spacing: 0.1em;
+  line-height: 1.75;
+}
+
+#b1 {
+  margin-right: 250px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+.ld2 {
+  margin-left: 200px;
+  margin-top: 40px;
+}
+
+.rb {
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 50px;
+}
+
+/* <!-- Responsibilites & Positions Section--> */
+.responsibilites {
+  position: relative;
+  padding-top: 20px;
+  margin-bottom: 35px;
+  padding-bottom: 70px;
+  background-color: #C3FF99;
+  padding-left: 150px;
+}
+
+.p1 {
+  text-align: center;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-left: 45px;
+  color: #4831D8;
+  font-family: 'SF UI Text';
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.75;
+  margin: 0 0 1.5rem 0;
+  text-transform: uppercase;
+}
+
+.i3 {
+  margin-bottom: 35px;
+}
+
+.r1 {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.a1 {
+  padding-left: 50px;
+}
+
+.r2 {
+  font-family: "Raleway", Helvetica, sans-serif;
+  letter-spacing: 0.1em;
+  line-height: 1.75;
+  text-transform: uppercase;
+}
+
+.rp1 {
+  font-family: "Raleway", Helvetica, sans-serif;
+  letter-spacing: 0.1em;
+  line-height: 1.75;
+}
+
+.a2 {
+  padding-left: 250px;
+}
+
+.ld {
+  margin-left: 430px;
+}
+
+/* Contact Section */
+.ic {
+  padding-left: 400px;
+}
+
+/* Social icons */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper .button {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover {
+  width: 200px;
+}
+
+.wrapper .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+  background: #1DA1F2;
+}
+
+.wrapper .button:nth-child(2):hover .icon {
+  background: #E1306C;
+}
+
+.wrapper .button:nth-child(3):hover .icon {
+  background: #0e76a8;
+}
+
+.wrapper .button:nth-child(4):hover .icon {
+  background: #ff0000;
+}
+
+.wrapper .button:nth-child(5):hover .icon {
+  background: #333;
+}
+
+.wrapper .button:nth-child(6):hover .icon {
+  background: #333;
+}
+
+.wrapper .button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover .icon i {
+  color: #fff;
+}
+
+.wrapper .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1) span {
+  color: #1DA1F2;
+}
+
+.wrapper .button:nth-child(2) span {
+  color: #E1306C;
+}
+
+.wrapper .button:nth-child(3) span {
+  color: #0e76a8;
+}
+
+.wrapper .button:nth-child(4) span {
+  color: #ff0000;
+}
+
+.wrapper .button:nth-child(5) span {
+  color: #333;
+}
+
+.wrapper .button:nth-child(6) span {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* <!-- Copyright Section --> */
+.enav {
+  bottom: 0;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.ft {
+  text-align: center;
+  padding-top: 20px;
+}
+
+h3 {
+  margin: 0;
+  margin-top: 0;
+}
