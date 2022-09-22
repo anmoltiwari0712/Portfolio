@@ -54,8 +54,10 @@ body {
 
 .wrapper .static-txt {
   color: #fff;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 400;
+  margin-top: 15px;
+
 }
 
 .wrapper .dynamic-txts {
@@ -68,7 +70,7 @@ body {
 .dynamic-txts li {
   list-style: none;
   color: #FFDE00;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 500;
   top: 0;
   position: relative;
